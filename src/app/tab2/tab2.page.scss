@@ -1,0 +1,25 @@
+ion-title{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+.text{
+text-align:center;
+font-weight: 500
+}
+
+.position{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+flex-flow: column;
+}
+
+ion-button{
+  --color:rgb(39, 20, 32);
+--ms-flex-direction: column;
+--ms-flex-align: center;
+
+}
