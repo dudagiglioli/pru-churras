@@ -1,3 +1,4 @@
+
 <ion-header [translucent]="true">
 
     <ion-toolbar>
@@ -6,7 +7,7 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="background">
 
 <ion-header>
   <ion-toolbar color="medium">
@@ -18,25 +19,26 @@
 <ion-grid [fixed]="true">
 <ion-row>
   <ion-col>
-    <ion-button fill="outline" size="large">1</ion-button>
+    <ion-button fill="outline" size="large" color="light">
+      <h2>1</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large">3</ion-button>
+    <ion-button fill="outline" size="large" color="light"><h2>3</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large">6</ion-button>
+    <ion-button fill="outline" size="large" color="light"><h2>6</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large">9</ion-button>
+    <ion-button fill="outline" size="large" color="light"><h2>9</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large">12</ion-button>
+    <ion-button fill="outline" size="large" color="light"><h2>12</h2></ion-button>
   </ion-col>
 </ion-row>
 </ion-grid>
 
 
-<ion-grid [fixed]="true">
+<ion-grid>
   <ion-row>
     <ion-col>
       <h1>Time 1</h1>
@@ -47,19 +49,23 @@
   </ion-row>
 </ion-grid>
 
-<ion-grid [fixed]="true">
+<ion-grid>
   <ion-row>
     <ion-col>
-      <ion-button fill="outline" size="large">+</ion-button>
+      <div class="centerButton">
+      <ion-button fill="outline" size="large" color="light">+</ion-button>
+    </div>
     </ion-col>
     <ion-col>
-      <ion-button fill="outline" size="large">+</ion-button>
+      <div class="centerButton">
+      <ion-button fill="outline" size="large" color="light">+</ion-button>
+    </div>
     </ion-col>
   </ion-row>
 </ion-grid>
 
 
-<ion-grid [fixed]="true">
+<ion-grid>
   <ion-row>
     <ion-col>
       <h1>0</h1>
@@ -70,54 +76,60 @@
   </ion-row>
 </ion-grid>
 
-<ion-grid [fixed]="true">
+<ion-grid>
   <ion-row>
     <ion-col>
-      <ion-button fill="outline" size="large">-</ion-button>
+      <div class="centerButton">
+      <ion-button fill="outline" size="large" color="light">-</ion-button>
+    </div>
     </ion-col>
     <ion-col>
-      <ion-button fill="outline" size="large">-</ion-button>
+      <div class="centerButton">
+      <ion-button fill="outline" size="large" color="light">-</ion-button>
+    </div>
     </ion-col>
   </ion-row>
 </ion-grid>
 
 <ion-text color="dark" >
-  <h1 class="text">PARTIDAS</h1>
+  <h2 class="text">PARTIDAS</h2>
 </ion-text>
 
-<div class="position">
+<div class="time">
   <ion-grid>
     <ion-row>
       <ion-col>
-        <h1>Time 1</h1>
+        <h2>Time 1</h2>
       </ion-col>
       <ion-col>
-        <h1>0</h1>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <h1>Time 2</h1>
-      </ion-col>
-      <ion-col>
-        <h1>0</h1>
+        <h2>0</h2>
       </ion-col>
     </ion-row>
   </ion-grid>
 </div>
+
+  <div class="time">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h2>Time 2</h2>
+      </ion-col>
+      <ion-col>
+        <h2>0</h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </div>
 
 
 </ion-content>
 
 <ion-footer>
   <ion-toolbar>
-    <ion-button>
-      <h2>LIMPAR
+    <ion-button fill="clear" expand="block">
+      <h1>LIMPAR
         <ion-icon name="refresh-circle-outline"></ion-icon>
-      </h2>
+      </h1>
     </ion-button>
   </ion-toolbar>
 </ion-footer>

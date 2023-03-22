@@ -1,25 +1,51 @@
-ion-title{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ion-title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
 
-.text{
-text-align:center;
-font-weight: 500
+.text {
+  text-align: center;
+  font-weight: 500;
 }
 
-.position{
+.position {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
-flex-flow: column;
+  flex-flow: column;
 }
 
-ion-button{
-  --color:rgb(39, 20, 32);
---ms-flex-direction: column;
---ms-flex-align: center;
+ion-button {
+  --color: rgb(39, 20, 32);
+  --ms-flex-direction: column;
+  --ms-flex-align: center;
+}
 
+.time {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+h2{
+  text-align: center;
+  color: white;
+}
+
+.background {
+  --background: url("https://img.elo7.com.br/product/main/40B6A00/quadro-jogos-cassino-poker-truco-baralho-naipe-roleta-dados.jpg")
+    0 0/100% 100% no-repeat;
+   }
+
+.centerButton{
+  display: flex;
+  justify-content: center;
 }
