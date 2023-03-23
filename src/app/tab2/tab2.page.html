@@ -7,11 +7,14 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true" class="background">
+<ion-content [fullscreen]="true"
+class="background"
+>
+
 
 <ion-header>
-  <ion-toolbar color="medium">
-    <ion-title size="large">Valendo: </ion-title>
+  <ion-toolbar color="black">
+    <ion-title size="large">Valendo: {{valendo}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -23,16 +26,16 @@
       <h2>1</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large" color="light"><h2>3</h2></ion-button>
+    <ion-button fill="outline" size="large" color="light" (click)="btn3()"><h2>3</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large" color="light"><h2>6</h2></ion-button>
+    <ion-button fill="outline" size="large" color="light" (click)="btn6()"><h2>6</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large" color="light"><h2>9</h2></ion-button>
+    <ion-button fill="outline" size="large" color="light" (click)="btn9()"><h2>9</h2></ion-button>
   </ion-col>
   <ion-col>
-    <ion-button fill="outline" size="large" color="light"><h2>12</h2></ion-button>
+    <ion-button fill="outline" size="large" color="light" (click)="btn12()"><h2>12</h2></ion-button>
   </ion-col>
 </ion-row>
 </ion-grid>
@@ -53,12 +56,12 @@
   <ion-row>
     <ion-col>
       <div class="centerButton">
-      <ion-button fill="outline" size="large" color="light">+</ion-button>
+      <ion-button fill="outline" size="large" color="light" (click)="aumentarPonto1()">+</ion-button>
     </div>
     </ion-col>
     <ion-col>
       <div class="centerButton">
-      <ion-button fill="outline" size="large" color="light">+</ion-button>
+      <ion-button fill="outline" size="large" color="light" (click)="aumentarPonto2()">+</ion-button>
     </div>
     </ion-col>
   </ion-row>
@@ -68,10 +71,10 @@
 <ion-grid>
   <ion-row>
     <ion-col>
-      <h1>0</h1>
+      <h1>{{pontosTime1}}</h1>
     </ion-col>
     <ion-col>
-      <h1>0</h1>
+      <h1>{{pontosTime2}}</h1>
     </ion-col>
   </ion-row>
 </ion-grid>
@@ -80,12 +83,12 @@
   <ion-row>
     <ion-col>
       <div class="centerButton">
-      <ion-button fill="outline" size="large" color="light">-</ion-button>
+      <ion-button fill="outline" size="large" color="light" (click)="diminuirPonto1()">-</ion-button>
     </div>
     </ion-col>
     <ion-col>
       <div class="centerButton">
-      <ion-button fill="outline" size="large" color="light">-</ion-button>
+      <ion-button fill="outline" size="large" color="light" (click)="diminuirPonto2()">-</ion-button>
     </div>
     </ion-col>
   </ion-row>
@@ -102,7 +105,7 @@
         <h2>Time 1</h2>
       </ion-col>
       <ion-col>
-        <h2>0</h2>
+        <h2>{{time1Ganhando}}</h2>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -115,7 +118,7 @@
         <h2>Time 2</h2>
       </ion-col>
       <ion-col>
-        <h2>0</h2>
+        <h2>{{time2Ganhando}}</h2>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -125,8 +128,8 @@
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar>
-    <ion-button fill="clear" expand="block">
+  <ion-toolbar color="black">
+    <ion-button fill="clear" expand="block" (click)="limpar()">
       <h1>LIMPAR
         <ion-icon name="refresh-circle-outline"></ion-icon>
       </h1>
